@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/lolfindduo/static/css/main.6c6b3c6f.css",
-    "main.js": "/lolfindduo/static/js/main.e98bf66f.js",
+    "main.js": "/lolfindduo/static/js/main.e1238257.js",
     "index.html": "/lolfindduo/index.html",
     "main.6c6b3c6f.css.map": "/lolfindduo/static/css/main.6c6b3c6f.css.map",
-    "main.e98bf66f.js.map": "/lolfindduo/static/js/main.e98bf66f.js.map"
+    "main.e1238257.js.map": "/lolfindduo/static/js/main.e1238257.js.map"
   },
   "entrypoints": [
     "static/css/main.6c6b3c6f.css",
-    "static/js/main.e98bf66f.js"
+    "static/js/main.e1238257.js"
   ]
 }
