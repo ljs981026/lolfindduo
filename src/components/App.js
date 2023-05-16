@@ -14,7 +14,7 @@ const App = () => {
             setTimeout(() => setInit(true), 2000);
         })
         return(
-            <BrowserRouter base="/">
+            <BrowserRouter basename={process.env.PUBLIC_URL}>
                     <Routes>
                         <Route path="/main" element={<Navigator isAuth={access} component={<Main />} />}></Route>
                         {/* <Route path="/main" element={<Main />}></Route>                                    */}
