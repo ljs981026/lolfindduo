@@ -34,7 +34,8 @@ const Login = () => {
                 {form ? 
                     <>                    
                         <JoinForm />
-                    </> :
+                    </> 
+                    :
                     <>
                         <LoginForm />
                     </>

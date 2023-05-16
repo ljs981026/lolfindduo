@@ -32,7 +32,7 @@ const JoinForm = ({changeBtn, sub, form}) => {
 
     const joinForm = (e) => {
         const {target: {value}} =e;
-        let regExpid = /^[a-z]+[0-9]{5,19}$/;
+        let regExpid = /^[a-zA-Z][0-9a-zA-Z]{4,14}$/;
         let regExppw = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])[A-Za-z\d$@$!%*?&]{8,}/;
         console.log(value);
         if(e.target.placeholder === "아이디") {
@@ -153,7 +153,7 @@ const JoinForm = ({changeBtn, sub, form}) => {
                         <input type="text" placeholder="아이디" value={id} onChange={onChange}/>
                         <input type="button" className="dupbtn" value="중복검사" onClick={isIdDuplicate} />                        
                     </div>
-                    {correctId ? <span className="case correct">조건이 충족된 아이디입니다.</span> : <span className="case">* 영문자로 시작하는 영문자 또는 숫자 6~20자</span>}
+                    {correctId ? <span className="case correct">조건이 충족된 아이디입니다.</span> : <span className="case">* 영소문자와 숫자를 조합하여 5~15자리</span>}
                     <div className="input_pw_box">
                         <input type="password" placeholder="비밀번호" value={pw} onChange={onChange}></input>
                         {correctPw ? <span className="case correct">조건이 충족된 비밀번호입니다.</span> : <span className="case">* 최소 8 자, 대문자 하나 이상, 소문자 하나, 숫자 하나 및 특수 문자 하나 이상</span>}
